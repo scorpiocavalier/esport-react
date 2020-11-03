@@ -1,5 +1,14 @@
+import Nav from './components/Nav'
+import styled from 'styled-components'
+
 export default function App() {
   return (
-    <div>Hello World</div>
+    <Wrapper>
+      <Nav />
+    </Wrapper>
   )
 }
+
+const Wrapper = styled.div`
+  display: flex;
+`
