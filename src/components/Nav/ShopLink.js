@@ -5,7 +5,7 @@ import ShopLogo from '../../icons/football-shirt.svg'
 export function ShopLink() {
   return (
     <Wrapper>
-      <h2>Shop</h2>
+      <h2>SHOP</h2>
       <Image src={ShopLogo} alt="Shop Logo"/>
     </Wrapper>
   )

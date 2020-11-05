@@ -13,7 +13,7 @@ export function BurgerMenu() {
         <Line2 open={ open } />
         <Line3 open={ open } />
       </Burger>
-      <h2>Menu</h2>
+      <h2>MENU</h2>
     </Wrapper>
   )
 }
@@ -34,8 +34,8 @@ const Burger = styled.div`
 `
 
 const Line = styled.div`
-  width: 40px;
-  height: 5px;
+  width: 30px;
+  height: 4px;
   background-color: white;
   margin: 3px 0;
   transition: 0.4s;
