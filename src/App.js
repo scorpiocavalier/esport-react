@@ -1,15 +1,25 @@
 import Nav from './components/Nav'
-import Hero from './components/Hero'
 import styled from 'styled-components'
 import { GlobalStyle } from './GlobalStyle'
+import { BrowserRouter as Router, Route, Switch } from 'react-router-dom'
+import { Home } from './components/Home'
+import { Shop } from './components/Shop'
 
 export default function App() {
   return (
-    <Wrapper>
-      <GlobalStyle />
-      <Nav />
-      <Hero />
-    </Wrapper>
+    <Router>
+      <Wrapper>
+
+        <GlobalStyle />
+        <Nav />
+
+        <Switch>
+          <Route exact path='/' component={Home} />
+          <Route exact path='/shop' component={Shop} />
+        </Switch>
+
+      </Wrapper>
+    </Router>
   )
 }
 

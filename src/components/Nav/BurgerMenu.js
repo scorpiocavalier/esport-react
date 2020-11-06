@@ -22,6 +22,7 @@ const Wrapper = styled.div`
   display: flex;
   justify-content: flex-start;
   width: 20%;
+  cursor: pointer;
 `
 
 const Burger = styled.div`
@@ -43,7 +44,7 @@ const Line = styled.div`
 
 const Line1 = styled(Line)`
   transform-origin: top right;
-  transform: ${ props => props.open && `rotate(-45deg) translate(-2px, -6px)` };
+  transform: ${ props => props.open && `rotate(-45deg) translate(-6px, -6px)` };
 `
 
 const Line2 = styled(Line)`
@@ -53,5 +54,5 @@ const Line2 = styled(Line)`
 
 const Line3 = styled(Line)`
   transform-origin: bottom right;
-  transform: ${ props => props.open && `rotate(45deg) translate(-3px, 5px)` };
+  transform: ${ props => props.open && `rotate(45deg) translate(-5px, 5px)` };
 `
