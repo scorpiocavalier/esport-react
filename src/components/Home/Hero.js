@@ -4,7 +4,7 @@ import styled from 'styled-components'
 export default function Hero() {
   return (
     <Wrapper>
-      <Brand>Garden Barber 2020</Brand>
+      <Brand>Home Page</Brand>
     </Wrapper>
   )
 }

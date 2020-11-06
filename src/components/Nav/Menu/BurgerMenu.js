@@ -1,29 +1,15 @@
-import React, { useState } from 'react'
+import React from 'react'
 import styled from 'styled-components'
 
-export function BurgerMenu() {
-  const [open, setOpen] = useState(false)
-
-  const handleClick = () => setOpen(!open)
-
+export function BurgerMenu({ open, handleClick }) {
   return (
-    <Wrapper>
-      <Burger onClick={ handleClick }>
-        <Line1 open={ open } />
-        <Line2 open={ open } />
-        <Line3 open={ open } />
-      </Burger>
-      <h2>MENU</h2>
-    </Wrapper>
+    <Burger onClick={ handleClick }>
+      <Line1 open={ open } />
+      <Line2 open={ open } />
+      <Line3 open={ open } />
+    </Burger>
   )
 }
-
-const Wrapper = styled.div`
-  display: flex;
-  justify-content: flex-start;
-  width: 20%;
-  cursor: pointer;
-`
 
 const Burger = styled.div`
   display: flex;
@@ -32,6 +18,7 @@ const Burger = styled.div`
   justify-content: center;
   height: inherit;
   margin-right: 1rem;
+  cursor: pointer;
 `
 
 const Line = styled.div`
