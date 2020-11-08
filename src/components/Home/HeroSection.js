@@ -4,7 +4,7 @@ import styled from 'styled-components'
 export default function Hero() {
   return (
     <Wrapper>
-      <Brand>Home Page</Brand>
+      <Image src='https://www.futuresplatform.com/sites/default/files/styles/article_hero_image/public/2019-02/esports.jpg?itok=TK6lpK_V' />
     </Wrapper>
   )
 }
@@ -18,5 +18,8 @@ const Wrapper = styled.div`
   color: white;
 `
 
-const Brand = styled.h2`
+const Image = styled.img`
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
 `
