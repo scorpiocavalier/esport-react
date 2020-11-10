@@ -1,7 +1,9 @@
 import React from 'react'
-import styled from 'styled-components'
+import { Section } from './Section'
+import { Gallery } from './Gallery'
 
 export function NewsSection(props) {
+  const title = 'Esports News'
   const imageLinks = [
     'https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcQLvvh0hs0NWvUAGGQ5H4gUzLNP4J5hkQc2Rg&usqp=CAU',
     'https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcTGYSUQ7vhfksR1dwypPO7tz1D2byUfMmGvkw&usqp=CAU',
@@ -12,49 +14,8 @@ export function NewsSection(props) {
   ]
 
   return (
-    <Wrapper>
-      <Title>Esports News</Title>
-      <Gallery>
-        { imageLinks.map((link, index) =>
-          <Image key={ index } src={ link } />
-        ) }
-      </Gallery>
-    </Wrapper>
+    <Section title={ title }>
+      <Gallery imageLinks={ imageLinks } />
+    </Section>
   )
 }
-
-const Wrapper = styled.div`
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  background: #f90114;
-  padding: 3rem 0;
-`
-
-const Title = styled.h2`
-  color: white;
-  font-size: 2.5rem;
-  margin-bottom: 2rem;
-`
-
-const Gallery = styled.div`
-  display: grid;
-  grid-template-columns: 300px;
-  /* padding: 3rem 0; */
-  gap: 2rem;
-
-  @media (min-width: 768px) {
-    grid-template-columns: repeat(2, 300px);
-  }
-
-  @media (min-width: 1024px) {
-    grid-template-columns: repeat(3, 300px);
-  }
-`
-
-const Image = styled.img`
-  width: 300px;
-  height: 200px;
-  border: 2px solid white;
-  background: gray;
-`

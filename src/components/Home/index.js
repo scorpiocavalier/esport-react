@@ -2,7 +2,7 @@ import React from 'react'
 import styled from 'styled-components'
 import HeroSection from './HeroSection'
 import { NewsSection } from './NewSection'
-// import { ProductionSection } from './ProductionSection'
+import { ProductionSection } from './ProductionSection'
 // import { ShopSection } from './ShopSection'
 
 export function Home() {
@@ -10,7 +10,7 @@ export function Home() {
     <Wrapper>
       <HeroSection />
       <NewsSection />
-      {/* <ProductionSection /> */}
+      <ProductionSection />
       {/* <ShopSection /> */}
     </Wrapper>
   )
