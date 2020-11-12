@@ -56,14 +56,12 @@ const List = styled.ul`
   justify-content: flex-start;
   width: 60%;
   height: 60%;
-  /* border: solid pink; */
 `
 
 const ListItem = styled.li`
   display: flex;
   width: 100%;
   position: relative;
-  /* border: solid green; */
 `
 
 const ItemName = styled.span`
@@ -85,13 +83,11 @@ const Sublist = styled.ul`
   left: 50%;
   width: 50%;
   visibility: hidden;
-  /* border: solid pink; */
 `
 
 const SublistItem = styled.li`
   margin-bottom: 15px;
   font-size: 1.5em;
-  /* border: solid green; */
 `
 
 const Footer = styled.div`
@@ -100,5 +96,4 @@ const Footer = styled.div`
   font-size: 3em;
   font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
   letter-spacing: 10px;
-  /* border: solid pink; */
 `
